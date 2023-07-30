@@ -36,3 +36,6 @@ TabLockX is a robust Chrome extension that empowers users to safeguard their sen
 6. On One Click: Available on the context menu, to directly lock the tab without moving to extension icon.
 
 ![context](https://github.com/imvks786/TabLockX/assets/56357173/03d78175-6a0b-4a71-b825-1a741a718cba)
+
+
+#imvks786 #tablockx #chromeextension #project #chrome #extension
