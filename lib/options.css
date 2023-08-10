@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+ body {
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+ }
+.icon_span{
+    display: flex;
+    align-items: center;
+}
+ input[type="radio"].my-radio-input {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+  }
+
+.gradient-color{
+    background: linear-gradient(to right,#ff3332,#ffbd08,#ff3332);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+.imvks-link:hover {
+    color: #ff3332 !important;
+}
+
+
+/* table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+}
+
+
+
+/* theme popup -- css */
+.radio-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+  }
+  
+  .radio-text {
+    margin-top: 5px; /* Add some spacing between the radio input and the text */
+  }
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+.popup{
+    width:100px;
+    height: 100px;
+    border:1px solid black;
+    border-radius: 10px;
+    /* margin:10px !important; */
+    opacity:1;
+    cursor: pointer;
+    position: relative;
+}
+.popup::before {
+    content: "\E5CA"; /* Add the Unicode for the "done" icon from Material Icons */
+    font-family: 'Material Icons'; /* Use the Material Icons font family */
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* Set the initial opacity to hide the icon */
+    pointer-events: none; /* Ensure the pseudo-element doesn't interfere with input focus */
+  }
+  /* Show the icon on hover */
+.popup:hover::before {
+    opacity: 1; /* Set the desired opacity value on hover */
+  }
+input.popup:hover {
+    opacity: 0.8 !important;
+    display:block;
+    /* border: 2px solid white; */
+}
+#imvks-dark-popup{
+    background-color: #888484;
+    color: white;
+}
+#imvks-light-popup{
+    background-color:white;
+    color:black;
+}
+#imvks-purple-popup{
+    /* background-color:#b85eb8; */
+    background-image: url('../assets/ever_box.jpg');
+    color:white;
+}
+#imvks-purplex-popup{
+    /* background-color:#b85eb8; */
+    background-image: url('../assets/ever_box.jpg');
+    color:white;
+}
+#imvks-yellow-popup{
+    /* background-color:#e9c824; */
+    background-image: url('../assets/city_box.jpg');
+    color:white;
+}
+/* theme popup -- css */
+
+
+.dark{
+    background-color: #202124;
+    color: white;
+    /* transition: background-color 1s ease; */
+}
+.logo-option{
+    font-family: system-ui;
+    font-size:30px;
+}
+logo-option:hover{
+    color:rgb(25, 25, 124);
+}
+
+.tablockx{
+    color: #ff3332 !important;
+}
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto; 
+    padding-bottom: 60px;
+  }
+
+/* Toggle Styles */
+#wrapper {
+    padding-left: 0;
+    /* -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; */
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #000;
+    /* -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; */
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 100px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
