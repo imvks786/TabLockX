@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Extension</title>
+  <script src="lib/jquery-3.7.0.min.js"></script>
+  <script src="src/popup.js" defer></script>
+  <link rel="stylesheet" href="css/popup_style.css" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+   
+  </style>
+</head>
+
+<body style="margin: 0xpx !important;">
+  <!--LOGO-->
+  <div class="imvks-logo-top">
+    <img src="assets/icon.png" height="40px" width="40px" style="padding-bottom: 7px;"/>
+    <span style="font-size: 20px;margin: 4px 0px 0px 5px;">TabLockX</span>
+    <div style="margin-left:160px;margin-top: 6px;">
+      <i style="cursor: pointer;" class="material-icons" id="open-options2">settings</i>
+    </div>
+  </div>
+
+  <!--CONTAINER-->
+  <div class="card" id="imvks-scheme">
+    <div class="profile-logo-top">
+      <img src="assets/profile.jpg" id="imvks-profile_popup">
+    </div>
+    <div style="text-align: center;">
+      <h1>Welcome!</h1>
+    </div>
+    <div id="imvks-step-1"  style="text-align: center;">
+      <h4>Let's Setup an Account!</h4>
+      <h5>Click on Signup</h5>
+      
+      <br>
+      <br>
+      <div style="align-items: center;">
+        <button id="open-options" class="blue_btn">Signup</button>
+      </div>
+    </div>
+
+    <div id="imvks-step-2">
+      <h4>Click Lock, to lock the current tab.</h4>
+      <button class="btn" id="immvks-lock-btn">Lock</button>
+      
+      <button class="btn-1" id="immvks-change-pwd-btn">Change Password</button>
+      <br>
+      <br>
+      <br>
+    </div>
+
+    <div id="imvks-step-3" style="display:none;">
+      <label>Current Password:</label>
+      <input type="password" id="imvks-cpwd"></input>
+      <br><br>
+      <label>New Password:</label>
+      <input type="password" id="imvks-spwd"></input>
+      <br><br>
+      <label>Confirm Password:</label><br>
+      <input type="password" id="imvks-scpwd"></input>
+      <br>
+      <br>
+      <span id="status_n"></span>
+      <button class="btn-1" id="immvks-change-pwd">Change Password</button>
+      <br>
+      <br>
+      <br>
+    </div>
+    
+    <div id="settings"  style="display:none;">
+      <div style="display:flex;">
+        <i class="material-icons" style="font-size:20px;">arrow_forward</i><span style="margin-top: 4px;cursor: pointer;"> Change Password </span>
+      </div>
+      <div style="display:flex;">
+        <i class="material-icons" style="font-size:20px;">arrow_forward</i><span style="margin-top: 4px;cursor: pointer;"> Reset Password </span>
+      </div>
+      <div style="display:flex;">
+        <i class="material-icons" style="font-size:20px;">arrow_forward</i><span style="margin-top: 4px;cursor: pointer;"> Back</span>
+      </div>
+    </div>
+    <hr>
+    <!--COPYRIGHTS-->
+    <div class="imvks-footer">
+      <span>&copy; 2023 | TabLockX</span>
+    </div>
+  </div>
+</body>
+
+</html>

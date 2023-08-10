@@ -1,0 +1,58 @@
+{
+  "author": "imvks",
+  "manifest_version": 3,
+  "name": "TabLock",
+  "version": "2.0",
+  "description": "TabLock, you can easily lock & secure your browser with a password, preventing unauthorized access to sensitive information.",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "commands": {
+    "show_lock_cmd": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+L",
+        "mac": "Command+Shift+L"
+      },
+      "description": "Run my function"
+    }
+  },
+  "content_scripts": [
+    {
+      "all_frames": true,
+      "matches": ["<all_urls>"],
+      "js": ["/src/contentscript.js"],
+      "run_at": "document_start",
+      "match_about_blank": true
+    }
+  ],
+
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "idle",
+    "scripting",
+    "commands",
+    "storage",
+    "contextMenus",
+    "notifications"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "icons": {
+    "16": "/assets/icon.png",
+    "48": "/assets/icon.png",
+    "128": "/assets/icon.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["jquery.js", "assets/icon.png", "assets/arrow.png"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Options</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--Icons-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="lib/jquery-3.7.0.min.js"></script>
+  <script src="lib/options.js"></script>
+  <link rel="stylesheet" href="lib/options.css" type="text/css">
+</head>
+
+<body>
+  <div id="wrapper">
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+          <a href="#" class="logo-option"><img src="assets/icon.png" style="height: 60px;width: 60px;"/>&nbsp; <b class="tablockx">T</b>ab<b>L</b>ock<b class="tablockx">X</b></a>
+        </li>
+        <li>
+          <a href="#" style="display: flex;align-items: center;" id="imvks-dashboard" class="imvks-link tablockx">
+            <i class="material-icons" style="font-size: 18px;">home</i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" style="display: flex;align-items: center;" id="imvks-security" class="imvks-link">
+            <i class="material-icons" style="font-size: 18px;">security</i>
+            <span>Security</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" style="display: flex;align-items: center;" id="imvks-account" class="imvks-link">
+            <i class="material-icons" style="font-size: 18px;">account_circle</i>
+            <span>Account</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" style="display: flex;align-items: center;" id="imvks-about" class="imvks-link">
+            <i class="material-icons" style="font-size: 18px;">info</i>
+            <span>About</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://tablockx.000webhostapp.com/contact_us.html" target="_blank" style="display: flex;align-items: center;" class="imvks-link">
+            <i class="material-icons" style="font-size: 18px;">chat</i>
+            <span>Contact us</span>
+          </a>
+        </li>
+        <div style="text-align: center;margin-top: 350px;">
+          <a href="" style="padding: 15px;"><?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="10%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="10%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M512,256c0,-141.385 -114.615,-256 -256,-256c-141.385,0 -256,114.615 -256,256c0,127.777 93.616,233.685 216,252.89l0,-178.89l-65,0l0,-74l65,0l0,-56.4c0,-64.16 38.219,-99.6 96.695,-99.6c28.009,0 57.305,5 57.305,5l0,63l-32.281,0c-31.801,0 -41.719,19.733 -41.719,39.978l0,48.022l71,0l-11.35,74l-59.65,0l0,178.89c122.385,-19.205 216,-125.113 216,-252.89Z" style="fill:#1877f2;fill-rule:nonzero;"/><path d="M355.65,330l11.35,-74l-71,0l0,-48.022c0,-20.245 9.917,-39.978 41.719,-39.978l32.281,0l0,-63c0,0 -29.297,-5 -57.305,-5c-58.476,0 -96.695,35.44 -96.695,99.6l0,56.4l-65,0l0,74l65,0l0,178.89c13.033,2.045 26.392,3.11 40,3.11c13.608,0 26.966,-1.065 40,-3.11l0,-178.89l59.65,0Z" style="fill:#fff;fill-rule:nonzero;"/></g></svg></a>
+          
+          <a href="" style="padding: 15px;"><?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="10%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="10%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="g5891"><path d="M512,64c0,-35.323 -28.677,-64 -64,-64l-384,0c-35.323,0 -64,28.677 -64,64l0,384c0,35.323 28.677,64 64,64l384,0c35.323,0 64,-28.677 64,-64l0,-384Z" id="background" style="fill:#2867b2;"/><g id="shapes"><rect height="257.962" id="rect11" style="fill:#fff;" width="85.76" x="61.053" y="178.667"/><path d="M104.512,54.28c-29.341,0 -48.512,19.29 -48.512,44.573c0,24.752 18.588,44.574 47.377,44.574l0.554,0c29.903,0 48.516,-19.822 48.516,-44.574c-0.555,-25.283 -18.611,-44.573 -47.935,-44.573Z" id="path13-0" style="fill:#fff;fill-rule:nonzero;"/><path d="M357.278,172.601c-45.49,0 -65.866,25.017 -77.276,42.589l0,-36.523l-85.738,0c1.137,24.197 0,257.961 0,257.961l85.737,0l0,-144.064c0,-7.711 0.554,-15.42 2.827,-20.931c6.188,-15.4 20.305,-31.352 43.993,-31.352c31.012,0 43.436,23.664 43.436,58.327l0,138.02l85.741,0l0,-147.93c0,-79.237 -42.305,-116.097 -98.72,-116.097Z" id="path15" style="fill:#fff;fill-rule:nonzero;"/></g></g></svg></a>
+          <br>
+          <br>
+          <p><span style="color: white;">Version 1.0.0</span><p>
+        </div>
+
+        
+      </ul>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="dash">
+      <div class="container">
+        <div class="container2">
+          <img src="assets/icon.png" style="height: 100px;width:100px;border-radius: 50%;">
+          <h2 class="gradient-color">Welcome</h2>
+          <h3 id="user_email"></h3>
+        </div>
+        
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="container">
+              <!--SIGNUP-->
+              <div class="row" id="signup_div">
+                <div class="col">
+                  <span>Signup</span><br>
+                </div>
+                <div class="col-6">
+                  <div id="setup_account">
+                    <h4>Create Account</h4>
+                      <form method="POST">
+                        <label>Email:</label><br>
+                        <input type="email"  class="form-control" id="imvks-email-set" placeholder="Enter Email Address" required>
+                        <span>(Incase you forget the password).</span>
+
+                        <br>
+                        <br>
+                        <label>Set Password:</label><br>
+                        <input type="password"  class="form-control" id="imvks-pwd-set" placeholder="Enter Password" required>
+                        
+                        <br>
+                        <br>
+                        <label>Confirm Password:</label><br>
+                        <input type="password"  class="form-control" id="imvks-pwd-confirm" placeholder="Confirm Password" required>
+
+                        <br>
+                        <br>
+                        <span id="response-back"></span>
+                        <br>
+                        <button id="signup" type="button" class="btn btn-primary">Signup</button>
+                      </form>
+                      <br>
+                      <br>
+                      <p>Already have Account? &nbsp;<a href="#" id="switch_signup">Click Here</a></p>
+                    </div>
+                  <hr>
+                  <br>
+                </div>
+                <div class="col">
+                </div>
+              </div>
+              <!--help-->
+              <div class="row" id="help_div">
+                <div class="col">
+                  <span class="icon_span">
+                    <b><i class="material-icons" style="font-size:15px">keyboard</i>&nbsp; Shortcut:</span></b>
+                    <br>
+                </div>
+                <div class="col-6">
+                  <p>Secure your browsing with a single keystroke! Press "Ctrl+Shift+L" to instantly lock your current tab with TabLockX. Protect your sensitive data and maintain privacy effortlessly.</p>
+                  <p>Press <b>"Ctrl+Shift+L"</b></p>
+                  <hr>
+                  <br>
+                </div>
+                <div class="col">
+                </div>
+              </div>
+              <!--PROFILE PIC-->
+              <!-- <div class="row" id="profile_pic_div">
+                <div class="col">
+                  <span>Profile Picture:</span><br>
+                </div>
+                <div class="col-6">
+                  <form id="imageForm" enctype="multipart/form-data">
+                    <input type="file" name="imageFile" id="imageFile">
+                    <button type="button" class="btn btn-primary" id="upload_img">Upload Image</button>
+                  </form>
+                  <div id="message"></div>
+                  <hr>
+                  <br>
+                </div>
+                <div class="col">
+                </div>
+              </div> -->
+              <!--THEME-->
+              <div class="row" id="theme_div">
+                <div class="col">
+                  <span class="icon_span">
+                    <b><i class="material-icons" style="font-size:15px">format_paint</i>&nbsp; Appearance:</span></b><br>
+                </div>
+                <div class="col-6">
+                  <div class="form-check">
+                    <input type="radio" class="form-check-input" id="imvks-dark" name="theme" value="0">
+                    <label class="form-check-label" for="imvks-dark"> Dark Mode</label><br>
+                  </div>
+                  <div class="form-check">
+                    <input type="radio" class="form-check-input" id="imvks-light" name="theme" value="1">
+                    <label class="form-check-label" for="imvks-light"> Light Mode</label>
+                  </div>
+                  <br>
+                  <button type="button" class="btn btn-primary" id="save_changes">Save Changes</button>
+                  <br><br>
+
+                  <!---THEME FOR POPUP HTML-->
+                  <span class="icon_span"> 
+                    <span class="material-symbols-outlined">format_paint</span><b>&nbsp;Popup Panel Themes:</b>
+                  </span>
+                  <br>
+                  <br>
+                  <div class="container">
+                    <div class="row">
+                      <p>Unlock a world of personalized browsing with our delightful themes.</p>
+                      <div class="col text-center">
+                        <label class="radio-label">
+                          <input type="radio" id="imvks-dark-popup" name="popup_theme" class="my-radio-input popup" value="0">
+                          <span  class="radio-text">Dark</span>
+                      </label>
+                      </div>
+                      <div class="col text-center">
+                        <label class="radio-label">
+                          <input type="radio" id="imvks-light-popup" name="popup_theme" class="my-radio-input popup" value="1">
+                          <span  class="radio-text">Light</span>
+                      </label>
+                      </div>
+                      <!-- <div class="col text-center">
+                        <label class="radio-label">
+                          <input type="radio" id="imvks-purplex-popup" name="popup_theme" class="my-radio-input popup" value="4">
+                          <span  class="radio-text">Purple</span>
+                      </label>
+                      </div> -->
+                      <div class="col text-center">
+                        <label class="radio-label">
+                          <input type="radio" id="imvks-purple-popup" name="popup_theme" class="my-radio-input popup" value="2">
+                          <span  class="radio-text">Moutains</span>
+                      </label>
+                      </div>
+                      <div class="col text-center">
+                        <label class="radio-label">
+                          <input type="radio" id="imvks-yellow-popup" name="popup_theme" class="my-radio-input popup" value="3">
+                          <span class="radio-text">Night City</span>
+                      </label>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <br>
+                  <br>
+                  <!-- <button type="button" class="btn btn-primary" id="save_changes_popup">Save Changes</button> -->
+                  <hr>
+                  <br>
+                </div>
+                <div class="col">
+                </div>
+              </div>
+
+
+              <!--PWD STATUS-->
+              <div class="row" id="pwd_status_div">
+                <div class="col">
+                  <span class="icon_span">
+                    <b><i class="material-icons" style="font-size:15px">vpn_key</i>&nbsp; Password Status:</span><br></b>
+                </div>
+                <div class="col-6">
+                  <span>Your Password Status is:</span>
+                  <span id="pwd_status"></span>
+                  <br>
+                  <br>
+                  <div id="passnotset">
+                    <p>This Password will be used for Unlocking the Lock Screen.</p>
+                    <span>Enter Password</span><br>
+                    <input type="password" id="lock_screen_1"  class="form-control" required>
+                    <br>
+                    <span>Confirm Password</span><br>
+                    <input type="password" id="lock_screen_2" class="form-control" required><br>
+                    <br>
+                    <span id="lock_screen_status"></span>
+                    <button type="button" class="btn btn-primary" id="set_lock_password">Set Password</button>
+                  </div>
+                  <br>
+                  <br>
+                  <div id="forget_password">
+                    <p>The Reset Password Link will be sent to Registered Email ID.</p>
+                    <button type="button" class="btn btn-danger" id="reset_lock_password">Reset Password</button>
+                    <br>
+
+                    <div id="set_new_password">
+                      <form>
+                        <b><span>Reset Password</span></b>
+                        <hr>
+                        <div class="form-group">
+                          <label for="token_pwd">Token</label>
+                          <input type="password" class="form-control" name="token_pwd" id="token_pwd" required>
+                        </div>
+                        <div class="form-group">
+                          <label for="token_n_pwd">New Password</label>
+                          <input type="password" name="token_n_pwd" class="form-control" id="token_n_pwd" required>
+                          
+                          <label for="token_cn_pwd">Confirm Password</label><br>
+                          <input type="password" name="token_cn_pwd" class="form-control" id="token_cn_pwd" required>
+                        </div>
+                          <br>
+                          <br>
+                          <button type="button" class="btn btn-primary"  id="token_change_pwd">Change</button>
+                        </form>
+                    </div>
+                    <span id="reset_status"></span>
+                  </div>
+                  <hr>
+                  <br>
+                  <br>
+                  <br><br><br><br><br><br><br><br><br><br>
+                  <!--footer-->
+                  <div style="text-align: center;color: #888484;">
+                    <span>&copy; 2023 TabLockX</span>
+                  </div>
+                  <!--footer-->
+                </div>
+                <div class="col">
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="secure">
+      <div class="container-fluid">
+
+        <div class="row" id="securenotlogged_div">
+          <div class="container" style="height: 860px;">
+            <div class="row">
+              <div class="col">
+              </div>
+              <div class="col-6">
+                <br><br><br><br>
+                <div style="border:1px solid black;border-radius: 10px;padding:10px;text-align: center;">
+                  <h1>Login or Signup First,<br> To access these features.</h1>
+                </div>
+                 <!--FOOTER-->
+                 <hr>
+                 <div style="text-align: center;color: #888484;">
+                   <span>&copy; 2023 TabLockX</span>
+                 </div>
+                 <!--FOOTER-->
+              </div>
+              <div class="col">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="row" id="secure_div">
+          <div class="col-lg-12">
+            <br><br><br>
+            <h1 class="icon_span">
+              <b><i class="material-icons" style="font-size:35px">security</i>&nbsp;Security</h1></b>
+            <hr>
+            <!---WHITELIST DOMAINS SECTION-->
+            <div class="container">
+              <div class="row">
+                  <div class="col">
+                      <span class="icon_span">
+                        <b><i class="material-icons" style="font-size:15px">verified_user</i>&nbsp; Whitelist Domains</span></b>
+                  </div>
+                  <div class="col-6">
+                      <input type="text" id="domainInput" class="form-control" placeholder="example.com">
+                      <br>
+                      <button id="addDomainButton" class="btn btn-primary">Add Domain</button>
+                      <br>
+                      <br>
+                      <br>
+                      <table id="whitelist">
+                        <tr>
+                          <th>Domain</th>
+                          <th>Remove</th>
+                        </tr>
+                      </table>
+                  </div>
+                <div class="col">
+                </div>
+              </div>
+            </div>
+            <hr>
+            <!---AUTO LOCK SECTION-->
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <span class="icon_span">
+                    <b><span class="material-symbols-outlined" style="font-size: 16px;">lock_clock</span>&nbsp; Auto Lock</span></b>
+                </div>
+                <div class="col-6">
+                  <!---AUTO LOCK-->
+                  <div id="autolocker">
+
+                    <span><b>Auto Lock</b></span>
+                    <p>Set the Time in Minutes to auto lock tab.</p>
+                    <br>
+                    <div class="row">
+                        <div class="col">
+                          <button type="button" class="btn btn-success" id="turn_on_autolock">Turn on</button>
+                          <button type="button" class="btn btn-danger" id="turn_off_autolock" style="display: none;">Turn off</button>
+                        </div>
+                        <div class="col">
+                          <form id="show_autolock_setting">
+                                <input type="number" class="form-control" placeholder="Time in Minutes" id="lock_time_min" style="display: none;">
+                          </form>
+                        </div>
+                        <div class="col">
+                          <button type="button" class="btn btn-primary"  id="set_autolock" style="display: none;">Set Time</button>
+                        </div>
+                    </div>
+                    <span id="autolock_status" style="display: none;color: green;">Auto Lock Set Successfully!</span>
+                    <br>
+                    <br>
+                  </div>
+                  <br>
+
+                  <!--CHANGE PASSWORD-->
+                  <form>
+                    <span><b>Change Password</b></span>
+                    <hr>
+                    <div class="form-group">
+                      <label for="c_pwd">Current Password</label>
+                      <input type="password" class="form-control" name="c_pwd" id="c_pwd" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="n_pwd">New Password</label>
+                      <input type="password" name="n_pwd" class="form-control" id="n_pwd" required>
+                      
+                      <label for="cn_pwd">Confirm Password</label><br>
+                      <input type="password" name="cn_pwd" class="form-control" id="cn_pwd" required>
+                    </div>
+                      <br>
+                      <span id="options-status"></span>
+                      <br>
+                      <button type="button" class="btn btn-primary"  id="change_pwd">Change</button>
+                    </form>
+
+                    <hr>
+                    <br>
+                    <br>
+                    <!--EMAIL VERIFICATION-->
+                    <b><span>Change Email</span></b>
+                    <p>New Email:</p>
+                    <input class="form-control" id="emailInput"  type="email" placeholder="Enter Email ID" required></input><br>
+                    <button type="button" class="btn btn-primary"  id="sendButton">Change</button>
+                    <div id="responseMessage"></div>
+
+                    <br><br><br>
+
+
+                    <!--FOOTER-->
+                    <hr>
+                    <div style="text-align: center;color: #888484;">
+                      <span>&copy; 2023 TabLockX</span>
+                    </div>
+                    <!--FOOTER-->
+                </div>
+                <div class="col">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="account">
+      <div class="container-fluid">
+        <div class="row" id="login_div">
+          <div class="col-lg-12">
+            <br><br><br>
+            <h1 class="icon_span">
+              <b><i class="material-icons" style="font-size:35px">account_circle</i>&nbsp;Account</h1></b>
+            <div class="container">
+
+              <div class="row">
+                <div class="col">
+                  <span>Login</span><br>
+                </div>
+                <div class="col-6">
+                  <div id="setup_account">
+                    <h4>Login</h4>
+                      
+                        <label>Your Email:</label><br>
+                        <input type="email"  class="form-control" id="imvks-email-get" placeholder="Enter Email Address" required>
+
+                        <br>
+                        <br>
+                        <label>Your Password:</label><br>
+                        <input type="password"  class="form-control" id="imvks-pwd-get" placeholder="Enter Password" required>
+                        
+                        <br>
+                        <br>
+                        <span id="response-back-get"></span>
+                        <br>
+                        <button id="login" class="btn btn-primary">Login</button>
+
+                        <br>
+                        <br>
+                        <p>Not Registered! <a href="" class="click_dash">Click Here</a></p>
+                    </div>
+
+                        <!--FOOTER-->
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <hr>
+                        <div style="text-align: center;color: #888484;">
+                          <span>&copy; 2023 TabLockX</span>
+                        </div>
+                        <!--FOOTER-->
+                  <hr>
+                  <br>
+                </div>
+                <div class="col">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="row" id="logout_div">
+          <div class="col-lg-12">
+            <br><br><br>
+            <h1 class="icon_span"><i class="material-icons" style="font-size:35px">account_circle</i>&nbsp;Account</h1>
+            <div class="container">
+
+              <div class="row">
+                <div class="col">
+                </div>
+                <div class="col-6">
+                  <div id="setup_account">
+                    <h4 class="icon_span">
+                      <span class="material-symbols-outlined">logout</span>&nbsp; Logout</h4>
+                        <span id="logout-msg"></span>
+                        <br>
+                        <button id="logout" class="btn btn-danger"><i class="material-icons" style="font-size: 13px;">input</i> Logout</button>
+                        <br>
+                        <br>
+                    </div>
+                    <hr>
+                    <div id="setup_account">
+                      <h4 class="icon_span">
+                        <span class="material-symbols-outlined">delete_forever</span>&nbsp; Delete Account</h4>
+                      <br>
+                      <p>Are you certain you want to proceed with deleting your account? This action is irreversible and will permanently remove all personal data and preferences associated with your account. Consider downloading any essential information before proceeding.</p>
+                      <br>
+                      <button id="delete_acc" class="btn btn-danger"><i class="material-icons" style="font-size: 15px;">delete_forever</i> Delete Account</button>
+                      <p><i>( Note: This action cann't be reversed!)</i></p>    
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                    </div>
+
+
+                    <!--FOOTER-->
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <hr>
+                    <div style="text-align: center;color: #888484;">
+                      <span>&copy; 2023 TabLockX</span>
+                    </div>
+                    <!--FOOTER-->
+                  <hr>
+                  <br>
+                </div>
+                <div class="col">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="abou">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+            <br><br><br>
+            <h1 class="icon_span"><i class="material-icons" style="font-size:35px">info</i>&nbsp;About</h1>
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                </div>
+                <div class="col-6">
+                  <b><span>TabLockX</span></b>
+                  <hr>
+                  <p style="text-align: justify;">TabLockX is a powerful Chrome extension designed to enhance your browsing experience by providing advanced tab management features. With TabLockX, you can lock individual tabs with a password, ensuring your sensitive information and online activities remain secure.
+                    <br>
+                    <br>
+                  <b>Key Features:</b><br>
+                  <ul>
+                    <li>Tab Locking: Secure your important tabs by locking them with a password. This prevents unauthorized access and keeps your sensitive data protected.</li>
+                    <br>
+                    <li>Automatic Locking: TabLockX can automatically lock tabs after a specified period of inactivity, ensuring your privacy even when you're away from your computer.</li>
+                    <br>
+                    <li>Customizable Settings: Tailor the extension to your preferences with customizable options such as lock timeout duration and password strength   requirements.</li>
+                    <br>
+                    <li>Seamless Integration: TabLockX seamlessly integrates into your Chrome browser, providing a user-friendly interface for easy tab management and security.</li>
+                  </ul>
+                  <br>
+                  Stay in control of your browsing experience and keep your tabs secure with TabLockX. Enjoy peace of mind knowing that your sensitive information is protected from prying eyes.</p>
+
+                  <hr>
+                  <div style="text-align: center;color: #888484;">
+                    <span>&copy; 2023 TabLockX</span>
+                  </div>
+                </div>
+                <div class="col">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- /#page-content-wrapper -->
+
+  </div>
+</body>
+
+</html>
