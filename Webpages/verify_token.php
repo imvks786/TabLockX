@@ -1,5 +1,5 @@
 <?php
-include 'index1.php';
+include 'index1.php';    //THIS IS DATABASE CONNECTION
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $email = $_POST['email'];
