@@ -1,6 +1,6 @@
 <?php
 include 'index1.php';
-require 'Mailer/vendor/autoload.php';
+require 'Mailer/vendor/autoload.php';  //PUT THE MAILER BY DOWNLOADING FROM GITHUB OR OTHER SOURCES//
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
         $mail->Username = 'YOUR_EMAIL_TO_SEND_MAIL';
-        $mail->Password = 'YOUR_PASSWORD_FOR_APP';
+        $mail->Password = 'YOUR_PASSWORD_FOR_APP';        //THIS PASSWORD IS NOT YOUR GMAIL/EMAIL DEFAULT PASSWORD YOU NEED TO GENERATED APP PASSWORD FROM ACCOUNT//
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
 
