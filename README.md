@@ -1,3 +1,4 @@
+![Topic Image](https://github.com/imvks786/TabLockX/assets/56357173/cf236083-c833-473d-b611-579b3564f2ae)
 ![icon](https://github.com/imvks786/TabLockX/assets/56357173/cf236083-c833-473d-b611-579b3564f2ae)
 
 # TabLockX
